@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n1, n2, i, gcd;
+    int n1=0, n2=0, i=0, gcd=0;
     scanf("%d %d", &n1, &n2);
 
     for(i=1; i <= n1 && i <= n2; ++i)
@@ -11,6 +11,5 @@ int main()
     }
 
     printf("%d",gcd);
-
     return 0;
 }

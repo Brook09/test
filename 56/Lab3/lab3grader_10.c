@@ -3,11 +3,11 @@
 int main()
 
 {
-   int a, b, c, t;
+   int a=0, b=0, c=0, t=0;
    char str[4];
    int i, izlaz[3];
    
-   scanf( "%d%d%d", &a, &b, &c );
+   scanf("%d%d%d", &a, &b, &c );
 
    if ( a > b ) { t = a; a = b; b = t; }
    if ( a > c ) { t = a; a = c; c = t; }
@@ -21,8 +21,7 @@ int main()
       else if ( str[i] == 'C' ) izlaz[i] = c;
    }
 
-   printf( "%d\n%d\n%d", izlaz[0], izlaz[1], izlaz[2] );
+   printf( "%d%d%d", izlaz[0], izlaz[1], izlaz[2] );
 
    return 0;
-
 }
